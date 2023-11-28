@@ -25,6 +25,10 @@
   display: block;
 }
 
+._icon-expand_more:before {
+  content: "\e905";
+}
+
 ._icon-chevron_left:before {
   content: "\e900";
 }
