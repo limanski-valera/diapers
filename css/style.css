@@ -450,20 +450,20 @@ textarea.input {
   row-gap: 1.25rem;
 }
 
-.header-link {
+.menu__list a {
   font-weight: 700;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
 
-.header-link.active {
+.menu__list a:active {
+  color: #acc0da;
+}
+
+.menu__list .current-menu-item a {
   color: #acc0da;
   cursor: default;
   pointer-events: none;
-}
-
-.header-link:active {
-  color: #acc0da;
 }
 
 .language-selector {
@@ -605,6 +605,7 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 100%;
 }
 
 .slide-main-block__container {
@@ -1618,9 +1619,6 @@ textarea.input {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-  }
-
-  .menu__link {
     font-size: 1.25rem;
   }
 
@@ -2361,7 +2359,7 @@ textarea.input {
             transform: scale(1.1);
   }
 
-  .header-link:hover {
+  .menu__list a:hover {
     color: #acc0da;
   }
 
