@@ -175,7 +175,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.25rem 1.875rem;
-  background-color: #B68157;
+  background-color: #008dbb;
   color: #ffffff;
   border-radius: 0.3125rem;
   font-weight: 700;
@@ -244,7 +244,7 @@ textarea {
 
 .input:focus {
   outline: none;
-  border-color: #B68157;
+  border-color: #008dbb;
 }
 
 .input[placeholder]:not([data-placeholder-nohiden])::-webkit-input-placeholder {
@@ -377,7 +377,7 @@ textarea.input {
 }
 
 .link {
-  color: #B68157;
+  color: #008dbb;
   font-weight: 700;
 }
 
@@ -457,13 +457,13 @@ textarea.input {
 }
 
 .header-link.active {
-  color: #B68157;
+  color: #008dbb;
   cursor: default;
   pointer-events: none;
 }
 
 .header-link:active {
-  color: #B68157;
+  color: #008dbb;
 }
 
 .language-selector {
@@ -473,7 +473,7 @@ textarea.input {
 
 .language-selector__title {
   padding: 0.3125rem 0.3125rem 0.3125rem 0.625rem;
-  background-color: rgba(181, 131, 89, 0.7);
+  background-color: rgba(0, 142, 189, 0.7);
   border-radius: 5px;
   color: #ffffff;
   font-weight: 700;
@@ -492,7 +492,7 @@ textarea.input {
   top: 100%;
   right: 0;
   min-width: 6.25rem;
-  border: 1px solid rgba(181, 131, 89, 0.7);
+  border: 1px solid rgba(0, 142, 189, 0.7);
   margin-top: 0.625rem;
   border-radius: 0.3125rem;
   overflow: hidden;
@@ -525,7 +525,7 @@ textarea.input {
 }
 
 .language-selector__item.active {
-  background-color: rgba(181, 131, 89, 0.7);
+  background-color: rgba(0, 142, 189, 0.7);
   color: #ffffff;
   pointer-events: none;
 }
@@ -560,7 +560,7 @@ textarea.input {
 
 .footer__decor-contact {
   text-transform: uppercase;
-  color: #B68157;
+  color: #ba997e;
   font-weight: 700;
 }
 
@@ -570,7 +570,7 @@ textarea.input {
 }
 
 .footer__link:active {
-  color: #B68157;
+  color: #ba997e;
 }
 
 .footer__bottom-row {
@@ -590,6 +590,7 @@ textarea.input {
 .slide-main-block__wrapper {
   padding: 4.375rem 0;
   color: #ffffff;
+  min-height: 28.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,7 +660,7 @@ textarea.input {
 }
 
 .item-result__icon {
-  color: #B68157;
+  color: #008dbb;
 }
 
 .item-result__icon img {
@@ -779,7 +780,7 @@ textarea.input {
 
 .item-contacts__icon {
   font-size: 1.875rem;
-  color: #B68157;
+  color: #ba997e;
 }
 
 .item-contacts__link {
@@ -790,7 +791,7 @@ textarea.input {
 }
 
 .item-contacts__link:active {
-  color: #B68157;
+  color: #ba997e;
 }
 
 .form {
@@ -907,7 +908,7 @@ textarea.input {
 }
 
 .item-categories__title:active {
-  color: #B68157;
+  color: #008dbb;
 }
 
 .item-categories__text {
@@ -929,7 +930,7 @@ textarea.input {
 }
 
 .item-categories__link:active {
-  color: #B68157;
+  color: #008dbb;
 }
 
 .product__title-block {
@@ -968,7 +969,7 @@ textarea.input {
   width: 0.3125rem;
   height: 0.3125rem;
   border-radius: 50%;
-  background-color: #B68157;
+  background-color: #008dbb;
   margin-top: 0.625rem;
 }
 
@@ -1078,7 +1079,7 @@ textarea.input {
   width: 0.3125rem;
   height: 0.3125rem;
   border-radius: 50%;
-  background-color: #B68157;
+  background-color: #008dbb;
   margin-top: 0.625rem;
 }
 
@@ -1350,10 +1351,6 @@ textarea.input {
     padding-bottom: 5rem;
   }
 
-  .slide-main-block__wrapper {
-    min-height: 37.5rem;
-  }
-
   .offer__title {
     font-size: 2.8125rem;
   }
@@ -1468,10 +1465,6 @@ textarea.input {
 
   .footer__content {
     padding-bottom: 2.5rem;
-  }
-
-  .slide-main-block__wrapper {
-    min-height: 31.25rem;
   }
 
   .offer__title {
@@ -1643,7 +1636,7 @@ textarea.input {
     position: absolute;
     width: 100%;
     height: 0.125rem;
-    background-color: #B68157;
+    background-color: #008dbb;
     border-radius: 20px;
   }
 
@@ -1890,18 +1883,6 @@ textarea.input {
 @supports not (padding-bottom: clamp( 2.5rem , 1.5909090909rem  +  4.5454545455vw , 5rem )) {
     .footer__content {
       padding-bottom: calc(2.5rem + 2.5 * (100vw - 20rem) / 55);
-    }
-}
-
-@supports (min-height: clamp( 31.25rem , 28.9772727273rem  +  11.3636363636vw , 37.5rem )) {
-    .slide-main-block__wrapper {
-      min-height: clamp( 31.25rem , 28.9772727273rem  +  11.3636363636vw , 37.5rem );
-    }
-}
-
-@supports not (min-height: clamp( 31.25rem , 28.9772727273rem  +  11.3636363636vw , 37.5rem )) {
-    .slide-main-block__wrapper {
-      min-height: calc(31.25rem + 6.25 * (100vw - 20rem) / 55);
     }
 }
 
@@ -2375,7 +2356,7 @@ textarea.input {
   }
 
   .header-link:hover {
-    color: #B68157;
+    color: #008dbb;
   }
 
   .language-selector__item:hover {
@@ -2383,11 +2364,11 @@ textarea.input {
   }
 
   .footer__link:hover {
-    color: #B68157;
+    color: #ba997e;
   }
 
   .item-contacts__link:hover {
-    color: #B68157;
+    color: #ba997e;
   }
 
   .item-categories__image-ibg:hover::before {
@@ -2401,10 +2382,10 @@ textarea.input {
   }
 
   .item-categories__title:hover {
-    color: #B68157;
+    color: #008dbb;
   }
 
   .item-categories__link:hover {
-    color: #B68157;
+    color: #008dbb;
   }
 }
