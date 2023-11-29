@@ -175,7 +175,7 @@ h6 {
     -ms-flex-align: center;
     align-items: center;
     padding: 1.25rem 1.875rem;
-    background-color: #008DBB;
+    background-color: #5BAEDC;
     color: #ffffff;
     border-radius: 0.3125rem;
     font-weight: 700;
@@ -244,7 +244,7 @@ textarea {
 
 .input:focus {
     outline: none;
-    border-color: #008DBB;
+    border-color: #5BAEDC;
 }
 
 .input[placeholder]:not([data-placeholder-nohiden])::-webkit-input-placeholder {
@@ -383,7 +383,7 @@ textarea.input {
 }
 
 .link {
-    color: #008DBB;
+    color: #5BAEDC;
     font-weight: 700;
 }
 
@@ -463,11 +463,11 @@ textarea.input {
 }
 
 .menu__list a:active {
-    color: #008DBB;
+    color: #5BAEDC;
 }
 
 .menu__list .current-menu-item a {
-    color: #008DBB;
+    color: #5BAEDC;
     cursor: default;
     pointer-events: none;
 }
@@ -479,7 +479,7 @@ textarea.input {
 
 .language-selector__title {
     padding: 0.3125rem 0.3125rem 0.3125rem 0.625rem;
-    background-color: #008DBB;
+    background-color: #5BAEDC;
     border-radius: 5px;
     color: #ffffff;
     font-weight: 700;
@@ -498,7 +498,7 @@ textarea.input {
     top: 100%;
     right: 0;
     min-width: 6.25rem;
-    border: 1px solid #008DBB;
+    border: 1px solid #5BAEDC;
     margin-top: 0.625rem;
     border-radius: 0.3125rem;
     overflow: hidden;
@@ -532,7 +532,7 @@ textarea.input {
 }
 
 .language-selector__item.active {
-    background-color: #008DBB;
+    background-color: #5BAEDC;
     color: #ffffff;
     pointer-events: none;
 }
@@ -675,7 +675,7 @@ textarea.input {
 }
 
 .item-result__icon {
-    color: #008DBB;
+    color: #5BAEDC;
 }
 
 .item-result__icon img {
@@ -924,7 +924,7 @@ textarea.input {
 }
 
 .item-categories__title:active {
-    color: #008DBB;
+    color: #5BAEDC;
 }
 
 .item-categories__text {
@@ -946,7 +946,7 @@ textarea.input {
 }
 
 .item-categories__link:active {
-    color: #008DBB;
+    color: #5BAEDC;
 }
 
 .product__title-block {
@@ -985,7 +985,7 @@ textarea.input {
     width: 0.3125rem;
     height: 0.3125rem;
     border-radius: 50%;
-    background-color: #008DBB;
+    background-color: #5BAEDC;
     margin-top: 0.625rem;
 }
 
@@ -1095,7 +1095,7 @@ textarea.input {
     width: 0.3125rem;
     height: 0.3125rem;
     border-radius: 50%;
-    background-color: #008DBB;
+    background-color: #5BAEDC;
     margin-top: 0.625rem;
 }
 
@@ -1655,7 +1655,7 @@ textarea.input {
         position: absolute;
         width: 100%;
         height: 0.125rem;
-        background-color: #008DBB;
+        background-color: #5BAEDC;
         border-radius: 20px;
     }
 
@@ -2667,7 +2667,7 @@ textarea.input {
     }
 
     .menu__list a:hover {
-        color: #008DBB;
+        color: #5BAEDC;
     }
 
     .language-selector__item:hover {
@@ -2693,10 +2693,10 @@ textarea.input {
     }
 
     .item-categories__title:hover {
-        color: #008DBB;
+        color: #5BAEDC;
     }
 
     .item-categories__link:hover {
-        color: #008DBB;
+        color: #5BAEDC;
     }
 }
