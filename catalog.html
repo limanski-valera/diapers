@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231128233931">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231206105105">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,19 +17,19 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__logo-wrapper">
-					<a href="home.html" class="header__logo"><img src="img/logo.svg" alt="eva" /></a>
+					<a href="home.html" class="custom-logo-link"><img class="custom-logo" src="img/logo.svg" alt="eva" /></a>
 				</div>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="current-menu-item">
-								<a href="home.html" class="">Home</a>
+								<a href="home.html" class="">Головна</a>
 							</li>
 							<li class="">
-								<a href="catalog.html" class="">Catalog</a>
+								<a href="catalog.html" class="">Каталог</a>
 							</li>
 							<li class="">
-								<a href="news.html" class="">News</a>
+								<a href="news.html" class="">Новини</a>
 							</li>
 						</ul>
 					</nav>
@@ -39,8 +39,16 @@
 						EN <span class="language-selector__icon _icon-expand_more"></span>
 					</button>
 					<div class="language-selector__body">
-						<a href="#" class="language-selector__item active">English</a>
-						<a href="#" class="language-selector__item">Українська</a>
+						<ul class="language-selector__list">
+							<li class="lang-item current-lang">
+								<a href="#">English</a>
+							</li>
+							<li class="lang-item">
+								<a href="#">Українська</a>
+							</li>
+						</ul>
+						<!-- <a href="#" class="language-selector__item active"></a>
+                <a href="#" class="language-selector__item">Українська</a> -->
 					</div>
 				</div>
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -54,16 +62,13 @@
 					<div class="banner__container">
 						<div class="banner__offer offer">
 							<div class="offer__title-block title-block title-block--white">
-								<div class="title-block__sub-title">Services Overview</div>
-								<h2 class="offer__title">We See Things That Others Miss</h2>
+								<div class="title-block__sub-title">виробництва Китаю та Греції</div>
+								<h2 class="offer__title">Великий Асортимент Одноразових Виробів</h2>
 							</div>
 							<div class="offer__text">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-								accusamus, excepturi magnam fugiat atque, non voluptas dicta
-								culpa totam praesentium nesciunt iusto veritatis. Saepe eius
-								quos veniam commodi error repudiandae?
+								Ознайомтеся з каталогом та оберіть необхідні вироби. Під час використання ви впевнитеся: наша продукція не така, як інші підгузки та пелюшки, запропоновані на українському ринку, адже EVA належать до вищого ґатунку та мають демократичну ціну. Обираючи вироби саме нашого виробництва, ви отримуєте високий комфорт та якість, впевненість протягом дня та ночі. Високий комфорт та якість — це головна запорука на шляху до вашої прихильності.
 							</div>
-							<a href="#1" class="offer__button button">Read More</a>
+							<!-- <a href="#1" class="offer__button button">Read More</a> -->
 						</div>
 					</div>
 				</div>
@@ -71,69 +76,65 @@
 			<section class="catalog__categories categories">
 				<div class="categories__container">
 					<div class="categories__title-block title-block">
-						<div class="title-block__sub-title">MEET THE PROFESSIONALS</div>
-						<h2 class="offer__title">Services List</h2>
+						<div class="title-block__sub-title">Висока якість</div>
+						<h2 class="offer__title">Категорії виробів</h2>
 					</div>
 					<div class="categories__items">
 						<div class="categories__item item-categories">
 							<a href="product.html" class="item-categories__image-ibg">
-								<picture><source srcset="img/catalog/diapers-for-adults.webp" type="image/webp"><img src="img/catalog/diapers-for-adults.jpg" alt="diapers-for-adults" /></picture>
+								<picture><source srcset="img/categories/adult-diaper.webp" type="image/webp"><img src="img/categories/adult-diaper.jpg" alt="diapers-for-adults" /></picture>
 							</a>
 							<div class="item-categories__body">
 								<h3 class="item-categories__title-wrapper">
-									<a href="product.html" class="item-categories__title">Diapers for adults</a>
+									<a href="product.html" class="item-categories__title">Підгузки та трусики для дорослих</a>
 								</h3>
 								<div class="item-categories__text">
-									The line of diapers for adults is designed for both active
-									people and people with disabilities.
+									Лінійка підгузків та трусиків для дорослих розроблена як і для активних людей так і для людей з обмеженими можливостями.
 								</div>
-								<a href="product.html" class="item-categories__link">READ MORE</a>
+								<a href="product.html" class="item-categories__link">детальніше...</a>
 							</div>
 						</div>
 						<div class="categories__item item-categories">
 							<a href="product.html" class="item-categories__image-ibg">
-								<picture><source srcset="img/catalog/hygienic-disposable-diapers.webp" type="image/webp"><img src="img/catalog/hygienic-disposable-diapers.jpg" alt="hygienic-disposable-diapers" /></picture>
+								<picture><source srcset="img/categories/kids-diapers.webp" type="image/webp"><img src="img/categories/kids-diapers.jpg" alt="hygienic-disposable-diapers" /></picture>
 							</a>
 							<div class="item-categories__body">
 								<h3 class="item-categories__title-wrapper">
-									<a href="product.html" class="item-categories__title">Hygienic disposable diapers</a>
+									<a href="product.html" class="item-categories__title">Підгузки та підгузки-трусики для дітей</a>
 								</h3>
 								<div class="item-categories__text">
-									Diapers are used as bed sheets, for hygiene procedures, when
-									changing...
+									Кожен малюк потребує комфорту та сухості, як під час сну так і під час активності.
 								</div>
-								<a href="product.html" class="item-categories__link">READ MORE</a>
+								<a href="product.html" class="item-categories__link">детальніше...</a>
 							</div>
 						</div>
 						<div class="categories__item item-categories">
 							<a href="product.html" class="item-categories__image-ibg">
-								<picture><source srcset="img/catalog/urological-pads.webp" type="image/webp"><img src="img/catalog/urological-pads.jpg" alt="urological-pads" /></picture>
+								<picture><source srcset="img/categories/underpads.webp" type="image/webp"><img src="img/categories/underpads.jpg" alt="urological-pads" /></picture>
 							</a>
 							<div class="item-categories__body">
 								<h3 class="item-categories__title-wrapper">
-									<a href="product.html" class="item-categories__title">Urological pads</a>
+									<a href="product.html" class="item-categories__title">Пелюшки</a>
 								</h3>
 								<div class="item-categories__text">
-									EVA pads are designed for people regardless of gender and
-									age, have an anatomical shape...
+									Лінійка пелюшок EVA розроблена для зручності використання у якості підкладних простирадл.
 								</div>
-								<a href="product.html" class="item-categories__link">READ MORE</a>
+								<a href="product.html" class="item-categories__link">детальніше...</a>
 							</div>
 						</div>
 						<div class="categories__item item-categories">
 							<a href="product.html" class="item-categories__image-ibg">
-								<picture><source srcset="img/catalog/baby-diapers.webp" type="image/webp"><img src="img/catalog/baby-diapers.jpg" alt="baby-diapers" /></picture>
+								<picture><source srcset="img/categories/urological-pads.webp" type="image/webp"><img src="img/categories/urological-pads.jpg" alt="baby-diapers" /></picture>
 							</a>
 							<div class="item-categories__body">
 								<h3 class="item-categories__title-wrapper">
-									<a href="product.html" class="item-categories__title">Baby diapers</a>
+									<a href="product.html" class="item-categories__title">Урологічні прокладки</a>
 								</h3>
 
 								<div class="item-categories__text">
-									The dimensions of EVA Baby dry diapers are designed taking
-									into account the structure of the child's body.
+									Прокладки розроблялись з урахуванням анатомічних особливостей жінок та чоловіків будь-якого віку.
 								</div>
-								<a href="product.html" class="item-categories__link">READ MORE</a>
+								<a href="product.html" class="item-categories__link">детальніше...</a>
 							</div>
 						</div>
 					</div>
@@ -144,13 +145,13 @@
 			<div class="footer__container">
 				<div class="footer__content">
 					<div class="footer__column">
-						<h3 class="footer__label-column">LOCATION</h3>
+						<h3 class="footer__label-column">Адреса</h3>
 						<div class="footer__text">
-							city ​​of Dnipro, avenue Oleksandr Polya, building 36, Dnipro, Ukraine
+							Дніпро, вул. Олександра Поля, буд. 36, Україна
 						</div>
 					</div>
 					<div class="footer__column">
-						<h3 class="footer__label-column">CONTACTS</h3>
+						<h3 class="footer__label-column">Контакти</h3>
 						<div class="footer__contacts">
 							<div class="footer__contact">
 								<span class="footer__decor-contact">E.</span>
@@ -163,18 +164,18 @@
 						</div>
 					</div>
 					<div class="footer__column">
-						<h3 class="footer__label-column">Info</h3>
+						<h3 class="footer__label-column">Інформація</h3>
 						<div class="footer__items">
-							<a href="info.html" class="footer__link">Privacy Notice</a>
+							<a href="info.html" class="footer__link">Політика приватності</a>
 						</div>
 					</div>
 					<div class="footer__column">
-						<h3 class="footer__label-column">COPYRIGHT</h3>
-						<div class="footer__text">Company ©. All rights reserved.</div>
+						<h3 class="footer__label-column">Інше</h3>
+						<div class="footer__text">Eva ©. Усі права захищені.</div>
 					</div>
 				</div>
 				<div class="footer__bottom-row">
-					<div class="footer__text">Company ©. All rights reserved.</div>
+					<div class="footer__text">Eva ©. Усі права захищені.</div>
 				</div>
 			</div>
 		</footer>
@@ -325,7 +326,7 @@
 			preloader();
 		</script>
 	</div>
-	<script src="js/app.min.js?_v=20231128233931"></script>
+	<script src="js/app.min.js?_v=20231206105105"></script>
 </body>
 
 </html>

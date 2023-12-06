@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231128233931">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231206105105">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,19 +17,19 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__logo-wrapper">
-					<a href="home.html" class="header__logo"><img src="img/logo.svg" alt="eva" /></a>
+					<a href="home.html" class="custom-logo-link"><img class="custom-logo" src="img/logo.svg" alt="eva" /></a>
 				</div>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="current-menu-item">
-								<a href="home.html" class="">Home</a>
+								<a href="home.html" class="">Головна</a>
 							</li>
 							<li class="">
-								<a href="catalog.html" class="">Catalog</a>
+								<a href="catalog.html" class="">Каталог</a>
 							</li>
 							<li class="">
-								<a href="news.html" class="">News</a>
+								<a href="news.html" class="">Новини</a>
 							</li>
 						</ul>
 					</nav>
@@ -39,8 +39,16 @@
 						EN <span class="language-selector__icon _icon-expand_more"></span>
 					</button>
 					<div class="language-selector__body">
-						<a href="#" class="language-selector__item active">English</a>
-						<a href="#" class="language-selector__item">Українська</a>
+						<ul class="language-selector__list">
+							<li class="lang-item current-lang">
+								<a href="#">English</a>
+							</li>
+							<li class="lang-item">
+								<a href="#">Українська</a>
+							</li>
+						</ul>
+						<!-- <a href="#" class="language-selector__item active"></a>
+                <a href="#" class="language-selector__item">Українська</a> -->
 					</div>
 				</div>
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -216,18 +224,16 @@
 				<div data-watch data-watch-once class="contacts__container">
 					<div class="contacts__details">
 						<div class="contacts__title-block title-block title-block--white">
-							<div class="title-block__sub-title">GET IN TOUCH</div>
-							<h2 class="title-block__title">Contact Details</h2>
+							<div class="title-block__sub-title">звʼязатись</div>
+							<h2 class="title-block__title">Контактна інформація</h2>
 						</div>
 						<div class="contacts__text">
-							If you are interested in working with us then please drop us a line,
-							we would love to hear from you.
+							Якщо ви зацікавлені в співробітництві з нами, будь-ласка, напишіть нам, ми будемо раді почути вашу думку.
 						</div>
 						<div class="contacts__items">
 							<div class="contacts__item item-contacts">
 								<span class="item-contacts__icon _icon-location_on"> </span>
-								<a target="_blank" href="https://maps.app.goo.gl/SqbPycSsXQDknc3HA" class="item-contacts__link">city ​​of Dnipro, avenue Oleksandr Polya, building 36,
-									Dnipro, Ukraine</a>
+								<a target="_blank" href="https://maps.app.goo.gl/SqbPycSsXQDknc3HA" class="item-contacts__link">Дніпро, вул. Олександра Поля, буд. 36, Україна</a>
 							</div>
 							<div class="contacts__item item-contacts">
 								<span class="item-contacts__icon _icon-mail"> </span>
@@ -241,8 +247,8 @@
 					</div>
 					<div class="contacts__action-block">
 						<div class="contacts__title-block title-block">
-							<div class="title-block__sub-title">CONTACT US</div>
-							<h2 class="title-block__title">Drop Us A Line</h2>
+							<div class="title-block__sub-title">Звʼязатись з нами</div>
+							<h2 class="title-block__title">Напишіть нам</h2>
 						</div>
 						<form action="#" class="contacts__form form">
 							<div class="form__item">
@@ -255,7 +261,7 @@
 								<textarea class="form__textarea input" placeholder="Message" name="message"></textarea>
 							</div>
 							<button type="submit" class="form__button button">
-								Send Message
+								Відправити
 							</button>
 						</form>
 					</div>
@@ -266,13 +272,13 @@
 			<div class="footer__container">
 				<div class="footer__content">
 					<div class="footer__column">
-						<h3 class="footer__label-column">LOCATION</h3>
+						<h3 class="footer__label-column">Адреса</h3>
 						<div class="footer__text">
-							city ​​of Dnipro, avenue Oleksandr Polya, building 36, Dnipro, Ukraine
+							Дніпро, вул. Олександра Поля, буд. 36, Україна
 						</div>
 					</div>
 					<div class="footer__column">
-						<h3 class="footer__label-column">CONTACTS</h3>
+						<h3 class="footer__label-column">Контакти</h3>
 						<div class="footer__contacts">
 							<div class="footer__contact">
 								<span class="footer__decor-contact">E.</span>
@@ -285,18 +291,18 @@
 						</div>
 					</div>
 					<div class="footer__column">
-						<h3 class="footer__label-column">Info</h3>
+						<h3 class="footer__label-column">Інформація</h3>
 						<div class="footer__items">
-							<a href="info.html" class="footer__link">Privacy Notice</a>
+							<a href="info.html" class="footer__link">Політика приватності</a>
 						</div>
 					</div>
 					<div class="footer__column">
-						<h3 class="footer__label-column">COPYRIGHT</h3>
-						<div class="footer__text">Company ©. All rights reserved.</div>
+						<h3 class="footer__label-column">Інше</h3>
+						<div class="footer__text">Eva ©. Усі права захищені.</div>
 					</div>
 				</div>
 				<div class="footer__bottom-row">
-					<div class="footer__text">Company ©. All rights reserved.</div>
+					<div class="footer__text">Eva ©. Усі права захищені.</div>
 				</div>
 			</div>
 		</footer>
@@ -447,7 +453,7 @@
 			preloader();
 		</script>
 	</div>
-	<script src="js/app.min.js?_v=20231128233931"></script>
+	<script src="js/app.min.js?_v=20231206105105"></script>
 </body>
 
 </html>

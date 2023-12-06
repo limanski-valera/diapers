@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231128233931">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231206105105">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,19 +17,19 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__logo-wrapper">
-					<a href="home.html" class="header__logo"><img src="img/logo.svg" alt="eva" /></a>
+					<a href="home.html" class="custom-logo-link"><img class="custom-logo" src="img/logo.svg" alt="eva" /></a>
 				</div>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="current-menu-item">
-								<a href="home.html" class="">Home</a>
+								<a href="home.html" class="">Головна</a>
 							</li>
 							<li class="">
-								<a href="catalog.html" class="">Catalog</a>
+								<a href="catalog.html" class="">Каталог</a>
 							</li>
 							<li class="">
-								<a href="news.html" class="">News</a>
+								<a href="news.html" class="">Новини</a>
 							</li>
 						</ul>
 					</nav>
@@ -39,8 +39,16 @@
 						EN <span class="language-selector__icon _icon-expand_more"></span>
 					</button>
 					<div class="language-selector__body">
-						<a href="#" class="language-selector__item active">English</a>
-						<a href="#" class="language-selector__item">Українська</a>
+						<ul class="language-selector__list">
+							<li class="lang-item current-lang">
+								<a href="#">English</a>
+							</li>
+							<li class="lang-item">
+								<a href="#">Українська</a>
+							</li>
+						</ul>
+						<!-- <a href="#" class="language-selector__item active"></a>
+                <a href="#" class="language-selector__item">Українська</a> -->
 					</div>
 				</div>
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -48,39 +56,79 @@
 		</header>
 
 		<main class="page-product">
+			<section class="page-product__category category-page-product">
+				<div class="category-page-product__container">
+					<h1 class="category-page-product__title">Підгузки та трусики для дорослих</h1>
+				</div>
+			</section>
 			<section class="page-product__product product">
 				<div class="product__container">
 					<div class="product__title-block title-block">
-						<h2 class="title-block__title">DIAPERS FOR ADULTS</h2>
+						<h2 class="title-block__title">Підгузники</h2>
 					</div>
 					<div class="product__info info">
-						<picture><source srcset="img/catalog/baby-diapers.webp" type="image/webp"><img src="img/catalog/baby-diapers.jpg" alt="" /></picture>
+						<picture><source srcset="img/products/adult-diaper.webp" type="image/webp"><img src="img/products/adult-diaper.jpg" alt="" /></picture>
 						<p>
-							The line of diapers for adults is designed for both active people
-							and people with disabilities. Every person has the right to comfort,
-							so this line was developed taking into account all the needs of a
-							person. The product has been tested for urine absorption standards.
-						</p>
-						<p>
-							By choosing EVA OPTIMA hospital products, you get a guarantee of
-							purity and quality. After all, OPTIMA hospital diapers have great
-							advantages, namely:
+							Обираючи підгузники EVA ви отримуєте гарант чистоти та якості, адже
+							підгузки EVA мають великі переваги, а саме:
 						</p>
 						<ul>
-							<li>leakage protection consists of hydrophobic materials</li>
-							<li>diapers do not cause irritation</li>
-							<li>guarantee of dryness during use.</li>
+							<li>захист від протікання складається з гідрофобних матеріалів;</li>
+							<li>підгузки не викликають подразнень;</li>
+							<li>гарантія сухості під час використання;</li>
+							<li>4 зручні багаторазові застібки;</li>
+							<li>абсорбуюча серцевина швидко поглинає та нейтралізує запах;</li>
+							<li>
+								індикатор наповнення дає змогу контролювати рівень заповнення
+								підгузка;
+							</li>
+							<li>
+								бокові частини підгузків виконані з тонкого, м’якого та
+								дихаючого нетканого матеріалу, для забезпечення 100 % дихання
+								шкіри;
+							</li>
+							<li>
+								всі матеріали, що застосовуються при виробництві є не алергенні,
+								не токсичні, не містять хлор та латекс;
+							</li>
 						</ul>
 						<p>
-							This line was developed with human comfort in mind, so OPTIMA
-							hospital diapers are soft, do not squeeze the skin and do not cause
-							irritation. Diapers are breathable and can be used regardless of a
-							person's gender. The absorbent core is made of 100% chlorine-free
-							long cellulose fibers and a high-quality super absorbent SAP polymer
-							with an odor neutralizer.
-							<a class="link" href="#">Absorbent ADL</a> , provides quick
-							absorption, retention and uniform distribution of liquid in the
-							middle of the diaper.
+							Ми розробили цю лінійку зважаючи на комфорт людини, тому підгузники
+							м’які, не стискають шкіру та не викликають подразнень. Підгузки
+							дихаючі та використовуються незалежно від статі людини. Абсорбуюча
+							серцевина виготовлена зі 100 % довгих волокон целюлози без хлору та
+							високоякісного супер поглинаючого полімера САП із нейтралізатором
+							запаху — odor control. Абсорбуючий шар, забезпечує швидке
+							поглинання, утримання та рівномірний розподіл рідини в середині
+							підгузка.
+						</p>
+						<p>
+							Підгузки EVA є в п’ятьох розмірах, та залежать від об’єму поглинання
+							рідини, та окружності стегон/талії:
+						</p>
+						<ol>
+							<li>Розмір XS: окружність стегон/талії 40–60 см;</li>
+							<li>Розмір S: окружність стегон/талії 50–90 см;</li>
+							<li>Розмір M: окружність стегон/талії 70–125 см;</li>
+							<li>Розмір L: окружність стегон/талії 90–155 см;</li>
+							<li>Розмір XL: окружність стегон/талії 110–170 см.</li>
+						</ol>
+						<p>
+							<b>Підгузки EVA premium hospital Super dry</b>, є в одному розмірі
+							XS та мають поглинання 6 крапель. Надійно утримуючи рідину вони
+							перешкоджають протіканням та попрілостям, не завдаючи дискомфорту
+							вашому тілу.
+						</p>
+						<p>
+							<b>Підгузки EVA OPTIMA hospital Super plus</b>, є в чотирьох
+							розмірах S-XL та мають поглинання, 6,5 крапель. Забезпечують
+							відчуття сухості та м’якого дотику.
+						</p>
+						<p>
+							<b>Підгузки EVA OPTIMA hospital Maxi night</b>, є в чотирьох
+							розмірах S-XL та мають поглинання, 10 крапель. Підгузки підійдуть
+							для довшого користування, адже вони не протікають та мають
+							найбільший об’єм поглинання.
 						</p>
 					</div>
 				</div>
@@ -88,32 +136,43 @@
 			<section class="page-product__product product">
 				<div class="product__container">
 					<div class="product__title-block title-block">
-						<h2 class="title-block__title">Underpants diapers for adults</h2>
+						<h2 class="title-block__title">Підгузки-трусики</h2>
 					</div>
 					<div class="product__info info">
-						<picture><source srcset="img/underpants-diapers-for-adults.webp" type="image/webp"><img src="img/underpants-diapers-for-adults.jpg" alt="" /></picture>
+						<picture><source srcset="img/products/adult-diapers-pants.webp" type="image/webp"><img src="img/products/adult-diapers-pants.jpg" alt="" /></picture>
 						<p>
-							The line of diapers for adults is designed for both active people
-							and people with disabilities. Every person has the right to comfort,
-							so this line was developed taking into account all the needs of a
-							person. The product has been tested for urine absorption standards.
+							<b>Підгузки-труси для дорослих EVA Optima normal</b> підходять як
+							для активних так і для нерухомих людей з нетриманням сечі та калу.
 						</p>
 						<p>
-							By choosing EVA OPTIMA hospital products, you get a guarantee of
-							purity and quality. After all, OPTIMA hospital diapers have great
-							advantages, namely:
+							Трусики досить легкі, при цьому мають гарну поглинальну здатність.
+							Наші трусики мають дуже багато переваг, а саме:
 						</p>
+						<ul>
+							<li>Підгузки виготовлені з м’якого гіпоалергенного матеріалу, що дихає;</li>
+							<li>Поглинаюча серцевина складається з 100 % целюлозно-волокнистої основи,
+								та абсорбуючого полімера САП із системою нейтралізації запаху та
+								супершвидким поглинанням рідини;</li>
+							<li>Високі бар’єри вологонепроникні з
+								боків підгузка запобігають протіканню сечі та калу у спокої та під час
+								активності;</li>
+							<li>Зовнішній шар підгузка виготовлений із вологонепроникного
+								матеріалу.</li>
+							<li>Надійний захист від протікань складається з гідрофобних
+								матеріалів, має спеціальну 3D-конструкцію для забезпечення максимальної
+								та довготривалої сухості.</li>
+							<li>Мають еластичні гумки на талії та стегнах
+								задля щільного прилягання з м’якого, нетканого матеріалу.</li>
+						</ul>
 						<p>
-							This line was developed with human comfort in mind, so OPTIMA
-							hospital diapers are soft, do not squeeze the skin and do not cause
-							irritation. Diapers are breathable and can be used regardless of a
-							person's gender. The absorbent core is made of 100% chlorine-free
-							long cellulose fibers and a high-quality super absorbent SAP polymer
-							with an odor neutralizer.
-							<a class="link" href="#">Absorbent ADL</a> , provides quick
-							absorption, retention and uniform distribution of liquid in the
-							middle of the diaper.
+							Підгузки-труси мають поглинання 6 крапель та є у чотирьох розмірах, які залежать від окружності талії/стегон:
 						</p>
+						<ol>
+							<li>Розмір S: окружність талії/стегон 50–100 см;</li>
+							<li>Розмір M: окружність талії/стегон 80–120 см;</li>
+							<li>Розмір L: окружність талії/стегон 100–150 см;</li>
+							<li>Розмір XL: окружність талії/стегон 120–160 см.</li>
+						</ol>
 					</div>
 				</div>
 			</section>
@@ -122,13 +181,13 @@
 			<div class="footer__container">
 				<div class="footer__content">
 					<div class="footer__column">
-						<h3 class="footer__label-column">LOCATION</h3>
+						<h3 class="footer__label-column">Адреса</h3>
 						<div class="footer__text">
-							city ​​of Dnipro, avenue Oleksandr Polya, building 36, Dnipro, Ukraine
+							Дніпро, вул. Олександра Поля, буд. 36, Україна
 						</div>
 					</div>
 					<div class="footer__column">
-						<h3 class="footer__label-column">CONTACTS</h3>
+						<h3 class="footer__label-column">Контакти</h3>
 						<div class="footer__contacts">
 							<div class="footer__contact">
 								<span class="footer__decor-contact">E.</span>
@@ -141,18 +200,18 @@
 						</div>
 					</div>
 					<div class="footer__column">
-						<h3 class="footer__label-column">Info</h3>
+						<h3 class="footer__label-column">Інформація</h3>
 						<div class="footer__items">
-							<a href="info.html" class="footer__link">Privacy Notice</a>
+							<a href="info.html" class="footer__link">Політика приватності</a>
 						</div>
 					</div>
 					<div class="footer__column">
-						<h3 class="footer__label-column">COPYRIGHT</h3>
-						<div class="footer__text">Company ©. All rights reserved.</div>
+						<h3 class="footer__label-column">Інше</h3>
+						<div class="footer__text">Eva ©. Усі права захищені.</div>
 					</div>
 				</div>
 				<div class="footer__bottom-row">
-					<div class="footer__text">Company ©. All rights reserved.</div>
+					<div class="footer__text">Eva ©. Усі права захищені.</div>
 				</div>
 			</div>
 		</footer>
@@ -303,7 +362,7 @@
 			preloader();
 		</script>
 	</div>
-	<script src="js/app.min.js?_v=20231128233931"></script>
+	<script src="js/app.min.js?_v=20231206105105"></script>
 </body>
 
 </html>
