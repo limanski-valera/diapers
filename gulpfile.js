@@ -4,18 +4,20 @@ import gulp from "gulp";
 import { plugins } from "./config/gulp-plugins.js";
 // Імпорт шляхів
 import { path } from "./config/gulp-settings.js";
+// Імпорт Гітхаб Пейджес
+import ghPages from "gulp-gh-pages";
 
 // Передаємо значення у глобальну змінну
 global.app = {
-	isBuild: process.argv.includes('--build'),
-	isDev: !process.argv.includes('--build'),
-	isWebP: !process.argv.includes('--nowebp'),
-	isImgOpt: !process.argv.includes('--noimgopt'),
-	isFontsReW: process.argv.includes('--rewrite'),
-	gulp: gulp,
-	path: path,
-	plugins: plugins
-}
+    isBuild: process.argv.includes("--build"),
+    isDev: !process.argv.includes("--build"),
+    isWebP: !process.argv.includes("--nowebp"),
+    isImgOpt: !process.argv.includes("--noimgopt"),
+    isFontsReW: process.argv.includes("--rewrite"),
+    gulp: gulp,
+    path: path,
+    plugins: plugins,
+};
 
 // Імпорт завдань
 import { reset } from "./config/gulp-tasks/reset.js";
@@ -38,15 +40,15 @@ const devTasks = gulp.parallel(fonts, gitignore);
 const buildTasks = gulp.series(fonts, jsDev, js, gulp.parallel(html, css, images, gitignore));
 
 // Експорт завдань
-export { html }
-export { css }
-export { js }
-export { jsDev }
-export { images }
-export { fonts }
-export { sprite }
-export { ftp }
-export { zip }
+export { html };
+export { css };
+export { js };
+export { jsDev };
+export { images };
+export { fonts };
+export { sprite };
+export { ftp };
+export { zip };
 
 // Побудова сценаріїв виконання завдань
 const development = gulp.series(devTasks);
@@ -55,16 +57,15 @@ const deployFTP = gulp.series(buildTasks, ftp);
 const deployZIP = gulp.series(buildTasks, zip);
 
 // Експорт сценаріїв
-export { development }
-export { build }
-export { deployFTP }
-export { deployZIP }
+export { development };
+export { build };
+export { deployFTP };
+export { deployZIP };
 
 // Виконання сценарію за замовчуванням
-gulp.task('default', development);
+gulp.task("default", development);
 
-
-
-
-
-
+// Deploy to GitHubP Pages
+gulp.task("deploy", function () {
+    return gulp.src("./dist/**/*").pipe(ghPages());
+});
