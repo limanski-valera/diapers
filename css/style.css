@@ -399,6 +399,10 @@ textarea.input {
   line-height: 1.5;
 }
 
+.offer__text--medium {
+  font-weight: 500;
+}
+
 .banner {
   color: #ffffff;
   position: relative;
@@ -430,6 +434,10 @@ textarea.input {
 
 .banner__offer .offer__title {
   color: #42474C;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .header {
